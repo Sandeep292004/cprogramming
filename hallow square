@@ -1,0 +1,32 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,d;
+	char e[2];
+	printf("Enter The Length of the square:");
+	scanf("%d",&a);
+	printf("Enter The Character to form the Square:");
+	scanf("%s",&e);
+	for(b=1;b<=a;b++)
+	{
+		for(c=1;c<=a;c++)
+		{
+			if(b==1 || b==a)
+			{
+				printf("%s",e);
+			}
+			else if(b!=2 || b!=a)
+			{
+				if(c==1 || c==a)
+				{
+					printf("%s",e);
+				}
+				else
+				{
+					printf(" ");
+				}
+			}
+		}
+		printf("\n");
+	}
+}
