@@ -1,0 +1,33 @@
+#include <stdio.h>
+main() 
+{
+	int a[100][100],n[100][100];
+	int b,c,d,e,f;
+	printf("Enter The Order:");
+	scanf("%d*%d",&f,&e);
+	printf("Enter The elements of Matrix:\n");
+	for(b=0;b<f;b++)
+	{
+		for(c=0;c<f;c++)
+		{
+			scanf("%d",&a[b][c]);
+		}
+	}
+	for(b=0;b<f;b++)
+	{
+		for(c=0;c<f;c++)
+		{
+			n[c][b]=0;
+			n[c][b]=a[b][c];
+		}
+	}
+	printf("The Transpose of the matrix is:\n");
+	for(b=0;b<f;b++)
+	{
+		for(c=0;c<f;c++)
+		{
+			printf("%d ",n[b][c]);
+		}
+		printf("\n");
+	}
+}
