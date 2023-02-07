@@ -1,0 +1,13 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,d;
+	printf("Enter The Number for which yu want multiplication:");
+	scanf("%d",&a);
+	printf("Enter The Multiplier Upto which you want multipliation:");
+	scanf("%d",&b);
+	for(c=1;c<=b;c++)
+	{
+		printf("%dx%d=%d",a,c,a*c);
+	}
+}
