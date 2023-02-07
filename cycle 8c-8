@@ -1,0 +1,17 @@
+#include <stdio.h>
+int swap(int *a)
+{
+	return *a;
+}
+main()
+{
+	int a,b,c,d;
+	printf("Element 1:");
+	scanf("%d",&a);
+	printf("Element 2:");
+	scanf("%d",&b);
+	printf("Element 3:");
+	scanf("%d",&c);
+	printf("The a,b,c are:%d,%d,%d\n",a,b,c);
+	printf("The a,b,c after swaping are %d,%d,%d",swap(&c),swap(&a),swap(&b));
+}
