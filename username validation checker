@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[100],b[100];
+	printf("Enter The Username:");
+	scanf("%s",&a);
+	printf("Reenter The Username:");
+	scanf("%s",&b);
+	if(strcmp(a,b)==0)
+	{
+		printf("The Username is Valid");
+	}
+	else
+	{
+		printf("The username is Invalid");
+	}
+}
