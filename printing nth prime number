@@ -1,0 +1,36 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,d=0,e=0,f;
+	printf("Enter The N Value:");
+	scanf("%d",&a);
+	for(b=2;b<1000000;b++)
+	{
+		d=0;
+		for(c=2;c<b;c++)
+		{
+			if(b%c==0)
+			{
+				d+=1;
+				break;
+			}
+		}
+		if(d==0)
+		{
+			e+=1;
+			if(e==a)
+			{
+				printf("The %d Prime is %d\n",a,b);
+				printf("The Three Prime Numbers after %d is: ",b);
+			}
+			if(e>a && e<=a+a)
+			{
+				printf("%d",b);
+				if(e<a+a)
+				{
+					printf(",");
+				}
+			}
+		}
+	}
+}
