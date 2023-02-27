@@ -1,0 +1,15 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,d;
+	printf("Range Of The Pattern:");
+	scanf("%d",&b);
+	for(c=0;c<b;c++)
+	{
+		for(d=0;d<c+1;d++)
+		{
+			printf("%d ",c+1);
+		}
+		printf("\n");
+	}
+	}
