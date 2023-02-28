@@ -1,0 +1,22 @@
+#include <stdio.h>
+main()
+{
+	int p,q,r,i,j,k;
+	printf("Enter P:");
+	scanf("%d",&p);
+	printf("Enter Q:");
+	scanf("%d",&q);
+	printf("Enter R:");
+	scanf("%d",&r);
+	for(i=p;i<=q;i++)
+	{
+		if((i%10)!=r)
+		{
+			printf("%d",i);
+			if(i<q)
+			{
+				printf(",");
+			}
+		}
+	}
+}
