@@ -1,0 +1,12 @@
+#include <stdio.h>
+struct rect
+{
+	int length,breadth;
+};
+main()
+{
+	struct rect rect1;
+	rect1.length=5;
+	rect1.breadth=6;
+	printf("%d",rect1.length*rect1.breadth);
+}
