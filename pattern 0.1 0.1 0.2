@@ -1,0 +1,18 @@
+#include <stdio.h>
+main()
+{
+	int a,c,i,j,k;
+	float b;
+	printf("Number Of Rows:");
+	scanf("%d",&a);
+	b=0.1;
+	for(i=1;i<=a;i++)
+	{
+		for(j=0;j<i;j++)
+		{
+			printf("%.1f ",b);
+		}
+		printf("\n");
+		b+=0.1;
+	}
+}
