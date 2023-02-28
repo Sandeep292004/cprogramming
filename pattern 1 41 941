@@ -1,0 +1,15 @@
+#include <stdio.h>
+main()
+{
+	int a,b,c,i,j,k;
+	printf("Number Of Rows:");
+	scanf("%d",&a);
+	for(i=1;i<=a;i++)
+	{
+		for(j=0;j<i;j++)
+		{
+			printf("%d ",(i-j)*(i-j));
+		}
+		printf("\n");
+	}
+}
