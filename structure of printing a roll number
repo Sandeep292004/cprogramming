@@ -1,0 +1,19 @@
+#include <stdio.h>
+struct student
+{
+	int roll_no;
+	char gender;
+	int percent;
+};
+int main()
+{
+	struct student a[10];
+	int e,b,c,d;
+	printf("Enter Student Names:");
+	for(e=0;e<1;e++)
+	{
+		scanf("%s",&a[e]);
+		a[e].roll_no=2;
+	}
+	printf("%d",a[0].roll_no);
+}
